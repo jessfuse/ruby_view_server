@@ -1,3 +1,9 @@
+<%
+  def link_to(name, url)
+      return "<a href='#{url}' target='_blank'>#{name}</a>"
+  end
+%>
+
 <h1> Hello</h1>
 <p>
   The time is now:
@@ -6,6 +12,9 @@
 
 <p>
   My Name is:
-  <%= @name %>
+  <%= link_to('Jess', 'jessica.html') %>
 </p>
+
+
+
 
